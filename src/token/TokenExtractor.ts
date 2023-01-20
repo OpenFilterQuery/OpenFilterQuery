@@ -22,11 +22,6 @@ const tokenRegexRules: Array<{ type: TokenType; regex: RegExp }> = [
     regex: /^((TRUE)|(true)|(FALSE)|(false))/,
   },
   {
-    type: TokenType.DateLiteral,
-    regex:
-      /^"(\d{4}(-\d\d(-\d\d(T\d\d:\d\d(:\d\d)?(\.\d+)?(([+-]\d\d:\d\d)|Z)?)?)?)?)"/,
-  },
-  {
     type: TokenType.StringLiteral,
     regex: /^"([^"]+)"/,
   },
@@ -112,14 +107,6 @@ export class TokenExtractor {
               type,
               value: value.toUpperCase() === "TRUE" ? true : false,
             },
-            nextRemainQuery: remainQuery.slice(matchedText.length),
-          };
-        }
-
-        case TokenType.DateLiteral: {
-          const value = matchResult[1];
-          return {
-            token: { type, value },
             nextRemainQuery: remainQuery.slice(matchedText.length),
           };
         }

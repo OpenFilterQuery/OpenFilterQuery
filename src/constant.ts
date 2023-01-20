@@ -2,7 +2,6 @@ export enum TokenType {
   UnaryLogicalOperator = "UnaryLogicalOperator",
   BinaryLogicalOperator = "BinaryLogicalOperator",
   BooleanLiteral = "BooleanLiteral",
-  DateLiteral = "DateLiteral",
   StringLiteral = "StringLiteral",
   NumericLiteral = "NumericLiteral",
   Identifier = "Identifier",
