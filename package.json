@@ -1,0 +1,27 @@
+{
+  "name": "openfilterquery",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OpenFilterQuery/OpenFilterQuery.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OpenFilterQuery/OpenFilterQuery/issues"
+  },
+  "homepage": "https://github.com/OpenFilterQuery/OpenFilterQuery#readme",
+  "devDependencies": {
+    "@types/jest": "^29.2.6",
+    "@types/node": "^18.11.18",
+    "jest": "^29.3.1",
+    "ts-jest": "^29.0.5",
+    "typescript": "^4.9.4"
+  }
+}
